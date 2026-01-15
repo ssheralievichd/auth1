@@ -1,0 +1,24 @@
+[project]
+name = "auth1"
+version = "0.1.0"
+description = "Minimal OAuth2 server with mail server integration"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "alembic>=1.13.0",
+    "python-multipart>=0.0.6",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "pyjwt>=2.8.0",
+    "sqlalchemy>=2.0.0",
+    "email-validator>=2.0.0",
+    "httpx>=0.27.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatchling.build.targets.wheel]
+packages = ["auth1"]

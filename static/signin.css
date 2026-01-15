@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #5cb85c;
+  --bg-dark: #1a1a1a;
+  --card-bg-dark: #2d2d2d;
+  --card-header-bg: #3a3a3a;
+  --text-dark: #e9ecef;
+  --text-muted-dark: #adb5bd;
+  --border-dark: #495057;
+  --input-bg-dark: #252525;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.card {
+  background: var(--card-bg-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  background: var(--card-header-bg);
+  border-bottom: 1px solid var(--border-dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.form-control {
+  background: var(--input-bg-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-dark);
+}
+
+.form-control:focus {
+  background: var(--input-bg-dark);
+  border-color: var(--primary-color);
+  color: var(--text-dark);
+  box-shadow: 0 0 0 0.2rem rgba(92, 184, 92, 0.25);
+}
+
+.form-control::placeholder {
+  color: var(--text-muted-dark);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #4a9b4a;
+  border-color: #4a9b4a;
+}
+
+.input-group-text {
+  background: var(--input-bg-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-muted-dark);
+}
+
+.text-muted {
+  color: var(--text-muted-dark) !important;
+}
+
+footer {
+  background: var(--card-bg-dark);
+  border-top: 1px solid var(--border-dark);
+  padding: 1rem 0;
+  margin-top: auto;
+}
