@@ -1,0 +1,12 @@
+services:
+  auth1:
+    build: .
+    container_name: auth1
+    ports:
+      - "13000:13000"
+    volumes:
+      - ./auth.db:/app/auth.db
+      - ./.env:/app/.env
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1

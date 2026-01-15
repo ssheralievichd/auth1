@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.git
+.gitignore
+*.md
+.venv
+venv/
+*.egg-info
+.pytest_cache
+.coverage
+htmlcov/
+auth.db
+auth.db-shm
+auth.db-wal
